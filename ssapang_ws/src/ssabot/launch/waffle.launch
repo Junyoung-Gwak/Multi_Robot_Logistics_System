@@ -1,0 +1,97 @@
+<launch>
+    <node pkg='ssapang' type='waffle_tower' name='waffle_tower' output='screen' />
+    <node pkg='ssapang' type='waffle_task_pub' name='waffle_task_pub' output='screen' />
+
+    <group ns="waffle1">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x -0.5 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle1" />
+            <arg name="start" value="LW21" />
+        </include>
+    </group>
+
+    <group ns="waffle2">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x 0.5 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle2" />
+            <arg name="start" value="RW21" />
+        </include>
+    </group>
+
+    <group ns="waffle3">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x -1 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle3" />
+            <arg name="start" value="LW22" />
+        </include>
+    </group>
+    <group ns="waffle4">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x 1 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle4" />
+            <arg name="start" value="RW22" />
+        </include>
+    </group>
+
+    <!-- <group ns="waffle5">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x -1.5 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle5" />
+            <arg name="start" value="LW23" />
+        </include>
+    </group>
+    <group ns="waffle6">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x 1.5 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle6" />
+            <arg name="start" value="RW23" />
+        </include>
+    </group> 
+    <group ns="waffle7">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x -2 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle7" />
+            <arg name="start" value="LW24" />
+        </include>
+    </group>
+    <group ns="waffle8">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x 2 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle8" />
+            <arg name="start" value="RW24" />
+        </include>
+    </group>  -->
+
+   <!-- <group ns="waffle9">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x -2.5 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle9" />
+            <arg name="start" value="LW25" />
+        </include>
+    </group>
+    
+    <group ns="waffle10">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x 2.5 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle10" />
+            <arg name="start" value="RW25" />
+        </include>
+    </group>
+
+    <group ns="waffle11">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x -3 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle11" />
+            <arg name="start" value="LW26" />
+        </include>
+    </group>
+    <group ns="waffle12">
+        <include file="$(find ssabot)/launch/waffle_spawn.launch">
+            <arg name="init_pose" value="-x 3 -y 3 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="waffle12" />
+            <arg name="start" value="RW26" />
+        </include>
+    </group> -->
+
+    
+</launch>

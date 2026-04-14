@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="BP0611">
+    <static>true</static>
+    <link name="BP0611">
+      <visual name="qr_visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.1 0.1</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <!--uri>file://materials/scripts/BP0611.material</uri-->
+            <uri>model://qrcode/BP0611/materials/scripts</uri>
+            <uri>model://qrcode/BP0611/materials/textures</uri>
+            <name>BP0611</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

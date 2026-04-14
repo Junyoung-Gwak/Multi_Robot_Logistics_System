@@ -1,0 +1,13 @@
+material BP0210
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BP0210.png
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+material B0708
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture B0708.png
+      }
+    }
+  }
+}

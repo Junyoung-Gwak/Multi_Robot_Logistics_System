@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="WS0103">
+    <static>true</static>
+    <link name="WS0103">
+      <visual name="qr_visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.1 0.1</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <!--uri>file://materials/scripts/WS0103.material</uri-->
+            <uri>model://qrcode/WS0103/materials/scripts</uri>
+            <uri>model://qrcode/WS0103/materials/textures</uri>
+            <name>WS0103</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

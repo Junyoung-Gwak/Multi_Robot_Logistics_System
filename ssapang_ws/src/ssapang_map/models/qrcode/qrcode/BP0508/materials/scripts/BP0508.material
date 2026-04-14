@@ -1,0 +1,13 @@
+material BP0508
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BP0508.png
+      }
+    }
+  }
+}

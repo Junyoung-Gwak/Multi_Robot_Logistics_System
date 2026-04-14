@@ -1,0 +1,13 @@
+material B0405
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture B0405.png
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="BS0115">
+    <static>true</static>
+    <link name="BS0115">
+      <visual name="qr_visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.1 0.1</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <!--uri>file://materials/scripts/BS0115.material</uri-->
+            <uri>model://qrcode/BS0115/materials/scripts</uri>
+            <uri>model://qrcode/BS0115/materials/textures</uri>
+            <name>BS0115</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

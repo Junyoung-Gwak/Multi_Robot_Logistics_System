@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="BP0405">
+    <static>true</static>
+    <link name="BP0405">
+      <visual name="qr_visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.1 0.1</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <!--uri>file://materials/scripts/BP0405.material</uri-->
+            <uri>model://qrcode/BP0405/materials/scripts</uri>
+            <uri>model://qrcode/BP0405/materials/textures</uri>
+            <name>BP0405</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

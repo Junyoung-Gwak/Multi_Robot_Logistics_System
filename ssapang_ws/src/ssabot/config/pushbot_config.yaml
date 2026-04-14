@@ -1,0 +1,26 @@
+# Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  # Position Controllers ---------------------------------------
+  virtual_joint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: virtual_joint1
+    pid: {p: 1.0, i: 0, d: 0}
+    
+  virtual_joint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: virtual_joint2
+    pid: {p: 1.0, i: 0, d: 0}
+
+  push_joint1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: push_joint1
+    pid: {p: 1.0, i: 0, d: 0}
+    
+  push_joint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: push_joint2
+    pid: {p: 1.0, i: 0, d: 0}
+  

@@ -1,0 +1,95 @@
+<launch>
+    <node pkg='ssapang' type='left_burger_tower' name='left_burger_tower' output='screen' />
+    <node pkg='ssapang' type='left_burger_task_pub' name='left_burger_task_pub' output='screen' />
+
+    <group ns="lburger1">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -1.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger1" />
+            <arg name="start" value="LB1112" />
+        </include>
+    </group>
+    <group ns="lburger2">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -2.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger2" />
+            <arg name="start" value="LB1122" />
+        </include>
+    </group>
+    <group ns="lburger3">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -3.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger3" />
+            <arg name="start" value="LB1132" />
+        </include>
+    </group>
+
+    <group ns="lburger4">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -5.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger4" />
+            <arg name="start" value="LB2112" />
+        </include>
+    </group>
+    <group ns="lburger5">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -6.6 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger5" />
+            <arg name="start" value="LB2122" />
+        </include>
+    </group>
+    <group ns="lburger6">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -7.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger6" />
+            <arg name="start" value="LB2132" />
+        </include>
+    </group>
+    <!-- <group ns="lburger7">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -9.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger7" />
+            <arg name="start" value="LB3112" />
+        </include>
+    </group>
+    <group ns="lburger8">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -10.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger8" />
+            <arg name="start" value="LB3122" />
+        </include>
+    </group>
+    <group ns="lburger9">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -11.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger9" />
+            <arg name="start" value="LB3132" />
+        </include>
+    </group>
+
+
+    <group ns="lburger10">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -13.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger10" />
+            <arg name="start" value="LB4112" />
+        </include>
+    </group>
+    <group ns="lburger11">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -14.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger11" />
+            <arg name="start" value="LB4122" />
+        </include>
+    </group>
+    <group ns="lburger12">
+        <include file="$(find ssabot)/launch/burger_spawn.launch">
+            <arg name="init_pose" value="-x -11.5 -y -15.5 -z 0 -Y 3.14" />
+            <arg name="robot_name" value="lburger12" />
+            <arg name="start" value="LB4132" />
+        </include>
+    </group>  -->
+
+
+
+</launch>

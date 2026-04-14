@@ -1,0 +1,13 @@
+material BP0611
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BP0611.png
+      }
+    }
+  }
+}

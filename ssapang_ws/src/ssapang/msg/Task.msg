@@ -1,0 +1,2 @@
+string product
+string destination

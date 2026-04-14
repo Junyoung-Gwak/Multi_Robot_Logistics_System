@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="B0908">
+    <static>true</static>
+    <link name="B0908">
+      <visual name="qr_visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.1 0.1</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <!--uri>file://materials/scripts/B0908.material</uri-->
+            <uri>model://qrcode/B0908/materials/scripts</uri>
+            <uri>model://qrcode/B0908/materials/textures</uri>
+            <name>B0908</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,13 @@
+material WP0302
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WP0302.png
+      }
+    }
+  }
+}

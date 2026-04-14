@@ -1,0 +1,128 @@
+<launch>
+    <group ns="push_robot1">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -8.0 -y -3.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot1" />
+        </include>
+    </group>
+
+    <group ns="push_robot2">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -5.0 -y -3.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot2" />
+        </include>
+    </group>
+
+    <group ns="push_robot3">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -2.0 -y -3.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot3" />
+        </include>
+    </group>
+
+    <group ns="push_robot4">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -8.0 -y -7.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot4" />
+        </include>
+    </group>
+
+    <group ns="push_robot5">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -5.0 -y -7.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot5" />
+        </include>
+    </group>
+
+    <group ns="push_robot6">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -2.0 -y -7.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot6" />
+        </include>
+    </group>
+
+    <group ns="push_robot7">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -8.0 -y -11.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot7" />
+        </include>
+    </group>
+
+    <group ns="push_robot8">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -5.0 -y -11.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot8" />
+        </include>
+    </group>
+
+    <group ns="push_robot9">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x -2.0 -y -11.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot9" />
+        </include>
+    </group> 
+
+    <group ns="push_robot10">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 8.0 -y -3.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot10" />
+        </include>
+    </group>
+
+    <group ns="push_robot11">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 5.0 -y -3.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot11" />
+        </include>
+    </group>
+
+    <group ns="push_robot12">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 2.0 -y -3.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot12" />
+        </include>
+    </group>
+
+    <group ns="push_robot13">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 8.0 -y -7.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot13" />
+        </include>
+    </group>
+
+    <group ns="push_robot14">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 5.0 -y -7.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot14" />
+        </include>
+    </group>
+
+    <group ns="push_robot15">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 2.0 -y -7.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot15" />
+        </include>
+    </group>
+
+    <group ns="push_robot16">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 8.0 -y -11.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot16" />
+        </include>
+    </group>
+
+    <group ns="push_robot17">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 5.0 -y -11.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot17" />
+        </include>
+    </group>
+
+    <group ns="push_robot18">
+        <include file="$(find ssabot)/launch/push_robot_spawn2.launch">
+            <arg name="init_pose" value="-x 2.0 -y -11.0 -z 0.5 -Y 0" />
+            <arg name="robot_name" value="push_robot18" />
+        </include>
+    </group>
+
+</launch>

@@ -1,0 +1,13 @@
+material W0406
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture W0406.png
+      }
+    }
+  }
+}

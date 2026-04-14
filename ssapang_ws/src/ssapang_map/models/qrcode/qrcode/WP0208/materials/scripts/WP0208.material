@@ -1,0 +1,13 @@
+material WP0208
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WP0208.png
+      }
+    }
+  }
+}

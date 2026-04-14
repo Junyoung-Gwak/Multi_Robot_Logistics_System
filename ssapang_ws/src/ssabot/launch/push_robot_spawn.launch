@@ -1,0 +1,38 @@
+<launch>
+      <!-- Set arguments -->
+      <arg name="init_pose"/>
+      <arg name="robot_name"/>
+      <arg name="x"/>
+      <arg name="y"/>
+      <arg name="ang"/>
+
+      <!-- Load robot description -->
+      <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ssabot)/urdf/push_robot.urdf.xacro'" />
+
+      <!-- Spwan a robot into Gazebo -->
+      <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+            args="$(arg init_pose) -urdf -param robot_description -model $(arg robot_name)"
+            respawn="false" />
+            
+      <!-- Publich robot state -->
+      <!-- <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
+            <param name="publish_frequency" type="double" value="50.0" />
+            <param name="tf_prefix" value="$(arg robot_name)_tf" />
+            <remap from="/joint_states" to="/$(arg robot_name)/joint_states" />
+      </node> -->
+
+      <!-- ======== -->
+      <!-- control -->
+
+      <rosparam file="$(find ssabot)/config/pushbot_config.yaml" command="load"/>
+
+      <!-- load the controllers -->
+      <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+            output="screen" args="joint_state_controller 
+                                                virtual_joint1_position_controller 
+                                                virtual_joint2_position_controller
+                                                push_joint1_position_controller
+                                                push_joint2_position_controller"/>
+
+
+</launch>

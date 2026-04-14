@@ -1,0 +1,13 @@
+material B0903
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture B0903.png
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+material BP0407
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BP0407.png
+      }
+    }
+  }
+}

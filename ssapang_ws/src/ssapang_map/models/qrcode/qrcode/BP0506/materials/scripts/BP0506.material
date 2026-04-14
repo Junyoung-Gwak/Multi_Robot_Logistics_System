@@ -1,0 +1,13 @@
+material BP0506
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BP0506.png
+      }
+    }
+  }
+}

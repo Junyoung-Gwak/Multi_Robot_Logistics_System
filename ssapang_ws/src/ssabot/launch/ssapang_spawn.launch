@@ -1,0 +1,18 @@
+<launch>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find ssapang_map)/worlds/ssapang_center.world" />
+        <arg name="paused" value="false" />
+        <arg name="use_sim_time" value="true" />
+        <arg name="gui" value="true" />
+        <arg name="headless" value="false" />
+        <arg name="debug" value="false" />
+    </include>
+    <node pkg='ssapang' type='pushing.py' name='pushing' output='screen' />
+
+    <include file="$(find ssabot)/launch/left_burger.launch" />
+    <include file="$(find ssabot)/launch/right_burger.launch" />
+    <include file="$(find ssabot)/launch/waffle.launch" />
+    <include file="$(find ssabot)/launch/pushbot.launch" />
+
+    
+</launch>

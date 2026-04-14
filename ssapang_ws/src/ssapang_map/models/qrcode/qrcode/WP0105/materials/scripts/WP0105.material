@@ -1,0 +1,13 @@
+material WP0105
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture WP0105.png
+      }
+    }
+  }
+}

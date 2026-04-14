@@ -1,0 +1,13 @@
+material W0405
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture W0405.png
+      }
+    }
+  }
+}
